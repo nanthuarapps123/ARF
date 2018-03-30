@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bma.arf">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fidh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddCustomer" />
+        <activity android:name=".AddItem" />
+        <activity android:name=".GeneraBill" />
+        <activity android:name=".Stockmain" />
+        <activity android:name=".PaymentInfo" />
+        <activity android:name=".Customer" />
+        <activity android:name=".Item" />
+        <activity android:name=".BillOne" />
+        <activity android:name=".SelectCus" />
+        <activity android:name=".Genbill2" />
+        <activity android:name=".BillDetails" />
+        <activity android:name=".Details" />
+        <activity android:name=".DetailsBill" />
+        <activity android:name=".Detailsdrum" />
+        <activity android:name=".DetailsPay" />
+        <activity android:name=".IndiviDrum"></activity>
+    </application>
+
+</manifest>

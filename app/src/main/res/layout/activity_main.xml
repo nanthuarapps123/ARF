@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.bma.arf.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_add_cus"
+                android:padding="10dp"
+                android:text="Add Customer"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:textColor="#000000"
+                android:background="@drawable/box"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_add_item"
+                android:padding="10dp"
+                android:text="Add item"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:textColor="#000000"
+                android:background="@drawable/box"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_make_bill"
+                android:padding="10dp"
+                android:text="Generate bill"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:textColor="#000000"
+                android:background="@drawable/box"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_stock_main"
+                android:padding="10dp"
+                android:text="Stock maintainance"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:textColor="#000000"
+                android:background="@drawable/box"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_pay_info"
+                android:padding="10dp"
+                android:text="Payment details"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:textColor="#000000"
+                android:background="@drawable/box"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

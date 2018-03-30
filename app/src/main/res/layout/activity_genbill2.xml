@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bma.arf.Genbill2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:id="@+id/radio_item">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ed_quant_item">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ed_kg_item">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ed_price_item">
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:id="@+id/ed_loose_kg">
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+            <!--upto dynamic views-->
+            <!--upto dynamic views-->
+            <!--upto dynamic views-->
+            <!--upto dynamic views-->
+            <!--upto dynamic views-->
+            <!--upto dynamic views-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_calc"
+            android:text="Calcu total "
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/boxbtnblue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_tot_price"
+            android:text="Total price is : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/butt_calc"
+            android:background="@drawable/box"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_dis"
+            android:hint=" Discount "
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/box"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_calc_grand"
+            android:text="Final total "
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/boxbtnblue"/>
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/txt_grand_tot_price"-->
+            <!--android:text=""-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_below="@+id/butt_calc_grand"-->
+            <!--android:background="@drawable/box"/>-->
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_paid_amnt"
+            android:hint="paid amount"
+            android:padding="8dp"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/box"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_sub_one"
+            android:text="submit"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/boxbtnblue"/>
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tot_drums"
+                    android:text="Total drum is "
+                    android:background="@drawable/box"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:visibility="gone"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_return_drum"
+                    android:hint="Enter return drums"
+                    android:padding="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:inputType="number"
+                    android:layout_below="@+id/tot_drums"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/box"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/butt_sub_drum"
+                    android:text="submit"
+                    android:padding="8dp"
+                    android:layout_below="@+id/tot_drums"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/boxbtnblue"/>
+
+
+
+            </RelativeLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_grand_tot_price"
+        android:text="Grand Total is "
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boxbtnblue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_remaing_amount"
+        android:text="Remaining amount is :"
+        android:padding="8dp"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_grand_tot_price"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boxbtnblue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_remaing_drum"
+        android:text="Remaining Drum is :"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_below="@+id/txt_remaing_amount"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boxbtnblue"/>
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_sub_two"
+            android:text="Next"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/boxbtnblue"/>
+
+
+    </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

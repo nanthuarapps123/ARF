@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_uid"
+                android:hint="Enter user id"
+                android:layout_gravity="center"
+                android:background="@drawable/box"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_check_iuser"
+                android:text="Check"
+                android:layout_gravity="center"
+                android:background="@drawable/boxbtnblue"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffe6b5">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/table1"
+                android:background="#ffac66">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" CUS NAME  "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" TOTAL BOXES  "
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:background="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  RETURN BOXES  "
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" BALANCE BOXES  "
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:background="#000000"/>
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:background="#000000"/>
+
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/table2">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/Tic_no"/>
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="2dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/Tic_source"/>
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="2dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/Tic_dest"/>
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="2dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/Tic_traveldate"/>
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="2dp"
+                    android:background="#000000"/>
+
+
+
+                ///
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
